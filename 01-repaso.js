@@ -61,13 +61,12 @@ function Git(){
     
 } */
 
-    let A=[3,4,5,6];
+    let A=[[3,4,5,6],[]];
     
     function Lectura(){
         for (let i=0;i<A.length;i++){
             let valores=A[i];
             console.log(`El valor del indice es ${i} y el dato es ${valores}`);
-            
         }
     }
 
