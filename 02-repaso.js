@@ -13,9 +13,17 @@ const datosArreglo=()=>{
 }
 
 //for of
+
+
 //for in
+
+
 //for each
+
+
 //funcion flecha
+
+
 //while
 
 //Estructura de control parser
