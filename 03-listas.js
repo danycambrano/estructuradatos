@@ -1,11 +1,12 @@
 //Crear una lista con diferentes tipos de datos
-let datos =[ {
-  nombre: "Dany",
-  apellido: "Cambrano",
-  edad: 35,
-  estudiante: false,
-},
-{
+let datos = [
+  {
+    nombre: "Dany",
+    apellido: "Cambrano",
+    edad: 35,
+    estudiante: false,
+  },
+  {
     nombre: "Axl",
     apellido: "Gamas",
     edad: 15,
@@ -34,21 +35,23 @@ const info = () => {
     console.log(informacion);
   } */
 
-    /* let valores=Object.entries(datos);
+  /* let valores=Object.entries(datos);
     valores.map(dat=>{
         console.log(dat);
         
     }) */
 
-       /*  Object.entries(datos).forEach(([key,value])=>{
+  /*  Object.entries(datos).forEach(([key,value])=>{
             console.log(` ${key}: ${value}`);
             
         }); */
 
-        datos.map((data)=>{
-            console.log(`El nombre es: ${data.nombre}`);
-            
-        })
-
+  datos.map((data) => {
+    console.log(
+      `El nombre es: ${data.nombre} ${data.apellido} y tiene ${data.edad} años`
+    );
+  });
 };
 info();
+
+//Dany
