@@ -20,7 +20,6 @@ app.post("/guardar",(req,res)=>{
     } catch (error) {
         console.log(error.message);   
     }
-    
 });
 
 app.listen(port,()=>{
