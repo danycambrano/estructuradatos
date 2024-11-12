@@ -2,8 +2,11 @@ const express=require("express");
 const bodyparser=require("body-parser");
 const cors=require("cors");
 
+const informacion= require('./bd/info');
+
+
 const app=express();
-const port=3001;
+const port=4000;
 
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(bodyparser.json());
@@ -22,6 +25,16 @@ app.post("/guardar",(req,res)=>{
     }
 });
 
+app.get("/filtro",(req,res)=>{
+    //const {nombre,apellidos}=req.body;
+    const filtro=informacion.filter(datos=>{
+        return datos.apellidos.includes("P");
+    })
+    res.send(filtro);
+})
+
+
+
 app.listen(port,()=>{
-    console.log("Servidor ejecutado en el puerto 3001");
+    console.log("Servidor ejecutado en el puerto 4000");
 });
